@@ -70,11 +70,9 @@ It must be separated from the `<USERNAME>` with a backslash `\`.
 
 ##### Primary and backup domain controllers
 
-When installing the Agent on a domain controller, there is no notion of local user account. So if the installer creates a user account, it will be a domain user rather than a local one.
+When installing the Agent on a domain controller, there is no notion of local user account.
 
-If no user account is specified on the command line, the installer will create a *domain* account named `ddagentuser` in the controller's domain.
-
-If a user account is specified on the command line, but this user account is not found in the domain, the installer will attempt to create it. If a password was specified, the installer will use that password. Otherwise it will generate a random password.
+The user account and password must be specified on the command line.
 
 If the specified user account is from a parent domain, the installer will use that user account.
 If the user account doesn't exist, it will create the user account in the child domain (the domain that the controller is joined to).
