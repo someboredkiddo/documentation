@@ -761,7 +761,7 @@
     "summary": "Get the list of all tests"
   },
   "CreateTest": {
-    "description": "Create a Synthetic test.",
+    "description": "This endpoint is deprecated. To create a test, use /api/v1/synthetics/tests/api for API tests, and /api/v1/synthetics/tests/browser for browser tests instead.",
     "summary": "Create a test",
     "request_description": "Details of the test to create.",
     "request_schema_description": "Object containing details about your Synthetic test."
@@ -823,7 +823,7 @@
     "summary": "Get a test configuration (API)"
   },
   "UpdateTest": {
-    "description": "Edit the configuration of a Synthetic test.",
+    "description": "This endpoint is deprecated. To edit a test, use /api/v1/synthetics/tests/api/{public_id} for API tests, and /api/v1/synthetics/tests/browser/{public_id} for browser tests instead.",
     "summary": "Edit a test",
     "request_description": "New test details to be saved.",
     "request_schema_description": "Object containing details about your Synthetic test."

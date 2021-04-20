@@ -19638,7 +19638,8 @@ paths:
         type: safe
     post:
       deprecated: true
-      description: Create a Synthetic test.
+      description: This endpoint is deprecated. To create a test, use /api/v1/synthetics/tests/api
+        for API tests, and /api/v1/synthetics/tests/browser for browser tests instead.
       operationId: CreateTest
       requestBody:
         content:
@@ -20186,7 +20187,9 @@ paths:
         type: safe
     put:
       deprecated: true
-      description: Edit the configuration of a Synthetic test.
+      description: This endpoint is deprecated. To edit a test, use /api/v1/synthetics/tests/api/{public_id}
+        for API tests, and /api/v1/synthetics/tests/browser/{public_id} for browser
+        tests instead.
       operationId: UpdateTest
       parameters:
       - description: The public ID of the test to get details from.
