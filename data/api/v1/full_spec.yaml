@@ -8364,6 +8364,7 @@ components:
           type: object
       required:
       - public_id
+      type: object
     SyntheticsCITestBody:
       description: Object describing the synthetics tests to trigger.
       properties:
@@ -8675,6 +8676,7 @@ components:
           type: string
       required:
       - value
+      type: object
     SyntheticsListTestsResponse:
       description: Object containing an array of Synthetic tests configuration.
       properties:
@@ -19901,7 +19903,7 @@ paths:
           description: '- Synthetic is not activated for the user
 
             - Test is not owned by the user'
-      summary: Get a test configuration (browser)
+      summary: Get a browser test
       tags:
       - Synthetics
       x-undo:
@@ -20017,7 +20019,7 @@ paths:
           description: '- Synthetic is not activated for the user
 
             - Test is not owned by the user'
-      summary: Get the test's latest results summaries (browser)
+      summary: Get a browser test's latest results summaries
       tags:
       - Synthetics
       x-codegen-request-body-name: body
@@ -20063,7 +20065,7 @@ paths:
           description: '- Synthetic is not activated for the user
 
             - Test or result is not owned by the user'
-      summary: Get a test result (browser)
+      summary: Get a browser test result
       tags:
       - Synthetics
       x-undo:
@@ -20141,7 +20143,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/APIErrorResponse'
           description: JSON format is wrong
-      summary: Trigger some Synthetics tests for CI
+      summary: Trigger tests from CI/CD pipelines
       tags:
       - Synthetics
       x-codegen-request-body-name: body
@@ -20294,7 +20296,7 @@ paths:
           description: '- Synthetic is not activated for the user
 
             - Test is not owned by the user'
-      summary: Get the test's latest results summaries (API)
+      summary: Get an API test's latest results summaries
       tags:
       - Synthetics
       x-codegen-request-body-name: body
@@ -20338,7 +20340,7 @@ paths:
           description: '- Synthetic is not activated for the user
 
             - Test or result is not owned by the user'
-      summary: Get a test result (API)
+      summary: Get an API test result
       tags:
       - Synthetics
       x-undo:
