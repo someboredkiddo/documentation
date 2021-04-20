@@ -19241,6 +19241,15 @@ paths:
       tags:
       - Service Level Objective Corrections
       x-codegen-request-body-name: body
+      x-given:
+        correction-updated:
+          parameters:
+          - name: slo_correction_id
+            source: correction.data.id
+          - name: body
+            value: "{\n  \"data\": {\n    \"attributes\": {\n      \"category\": \"\
+              Deployment\"\n     },\n     \"type\": \"correction\"\n  }\n}"
+          step: update category for the "correction"
       x-undo:
         type: idempotent
       x-unstable: '**Note**: This endpoint is in public beta.
